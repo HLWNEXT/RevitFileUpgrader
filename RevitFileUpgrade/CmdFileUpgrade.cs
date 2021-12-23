@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Text;
 using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media.Imaging;
@@ -177,7 +178,9 @@ namespace RevitFileUpgrade
                             // Save the Revit file to the target destination.
                             // Since we are opening a file as an active document, it takes care of preview. 
                             String destinationFile = destPath + "\\" + file.Name;
-                            doc.SaveAs(destinationFile);
+                            var versionIndex = destinationFile.Length - 13;
+                            var destionationFilePath = destinationFile.Remove(versionIndex, 4).Insert(versionIndex, "2021");
+                            doc.SaveAs(destionationFilePath);
 
                             // Saving the current document to close it later.   
                             // If we had a method to close an active document, we want to close it here. However, since we opened it as an active document, we cannot do so.

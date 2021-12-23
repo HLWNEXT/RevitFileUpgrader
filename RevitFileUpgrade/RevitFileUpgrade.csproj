@@ -87,4 +87,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /y /d  "$(ProjectDir)\$(OutDir)\RevitFileUpgrade.dll" "C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\AppLoader\AppLoader\bin\Debug"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
