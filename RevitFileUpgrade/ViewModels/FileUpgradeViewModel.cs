@@ -251,11 +251,11 @@ namespace RevitFileUpgrade.ViewModels
         // Helper method to check if file already exists in target folder
         private bool AlreadyExists(DirectoryInfo target, FileInfo file)
         {
-            foreach (FileInfo infoTarget in target.GetFiles())
-            {
-                if (infoTarget.Name.Equals(file.Name))
-                    return true;
-            }
+            //foreach (FileInfo infoTarget in target.GetFiles())
+            //{
+            //    if (infoTarget.Name.Equals(file.Name))
+            //        return true;
+            //}
             return false;
         }
 

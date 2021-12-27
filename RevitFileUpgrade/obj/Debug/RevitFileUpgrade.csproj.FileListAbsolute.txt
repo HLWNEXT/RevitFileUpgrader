@@ -173,4 +173,3 @@ C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\R
 C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\RevitFileUpgrade\obj\Debug\RevitFileUpgrade.dll
 C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\RevitFileUpgrade\obj\Debug\RevitFileUpgrade.pdb
 C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\RevitFileUpgrade\obj\Debug\RevitFileUpgrade.csproj.CopyComplete
-C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\RevitFileUpgrade\obj\Debug\RevitFileUpgrade.csproj.AssemblyReference.cache

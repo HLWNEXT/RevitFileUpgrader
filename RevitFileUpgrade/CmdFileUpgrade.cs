@@ -107,9 +107,8 @@ namespace RevitFileUpgrade
         private void Upgrade(FileInfo file, String destPath, ref bool addInfo, ref List<string> fileTypes, ref IList<FileInfo> files, ref StreamWriter writer)
         {
             //addInfo = false;
-
             // Check if file type is what is expected to be upgraded or is a text file which is for files which contain type information for certain family files
-            if (fileTypes.Contains(file.Extension) || file.Extension.Equals(".txt"))
+            if (! file.Name.Contains("2021") && (fileTypes.Contains(file.Extension) || file.Extension.Equals(".txt")))
             {
                 try
                 {
@@ -162,7 +161,6 @@ namespace RevitFileUpgrade
                         }
                         else
                         {
-
                             // Open a Revit file as an active document. 
                             UIApplication UIApp = cmdData.Application;
                             var App = UIApp.Application;
@@ -174,6 +172,28 @@ namespace RevitFileUpgrade
                                 bool saveModified = true;
                                 previousDocument.Close(saveModified);
                             }
+
+                            //// Initial a transaction to add parameters.
+                            //try
+                            //{
+                            //    Transaction t = new Transaction(doc, "Add Parameter");
+                            //    t.Start();
+                            //    FamilyParameter version = doc.FamilyManager.AddParameter("Version", BuiltInParameterGroup.PG_TEXT, ParameterType.Text, false);
+                            //    FamilyParameter lastPublishedDate = doc.FamilyManager.AddParameter("Last Published Date", BuiltInParameterGroup.PG_TEXT, ParameterType.Text, false);
+                            //    FamilyParameter publishedBy = doc.FamilyManager.AddParameter("Published by", BuiltInParameterGroup.PG_TEXT, ParameterType.Text, false);
+
+                            //    doc.Regenerate();
+                            //    doc.FamilyManager.Set(version, "0");
+                            //    doc.FamilyManager.Set(lastPublishedDate, System.DateTime.Today.ToString());
+                            //    doc.FamilyManager.Set(publishedBy, "Chenzhang Wang");
+                            //    t.Commit();
+                            //}
+                            //catch
+                            //{
+
+                            //}
+                            
+
 
                             // Save the Revit file to the target destination.
                             // Since we are opening a file as an active document, it takes care of preview. 
@@ -191,7 +211,15 @@ namespace RevitFileUpgrade
                             // was successful - for status updates
                             addInfo = true;
                         }
+                        //// Try closing the previously opened document after another one is opened. We are doing this because we cannot explicitely close an active document at a moment.  
+                        //if (previousDocument != null)
+                        //{
+                        //    bool saveModified = true;
+                        //    previousDocument.Close(saveModified);
+                        //}
                     }
+
+                    
 
                     if (addInfo) ++success;
                     
