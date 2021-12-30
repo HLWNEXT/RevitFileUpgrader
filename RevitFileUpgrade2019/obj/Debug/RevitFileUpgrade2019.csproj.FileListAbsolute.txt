@@ -72,7 +72,6 @@ C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\R
 C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\RevitFileUpgrade2019\bin\Debug\ru-RU\AdWindows.resources.dll
 C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\RevitFileUpgrade2019\bin\Debug\zh-CN\AdWindows.resources.dll
 C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\RevitFileUpgrade2019\bin\Debug\zh-TW\AdWindows.resources.dll
-C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\RevitFileUpgrade2019\obj\Debug\RevitFileUpgrade2019.csproj.AssemblyReference.cache
 C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\RevitFileUpgrade2019\obj\Debug\Views\FileUpgrade.g.cs
 C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\RevitFileUpgrade2019\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\RevitFileUpgrade2019\obj\Debug\RevitFileUpgrade2019_MarkupCompile.cache
@@ -83,3 +82,4 @@ C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\R
 C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\RevitFileUpgrade2019\obj\Debug\RevitFileUpgrade2019.csproj.CopyComplete
 C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\RevitFileUpgrade2019\obj\Debug\RevitFileUpgrade2019.dll
 C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\RevitFileUpgrade2019\obj\Debug\RevitFileUpgrade2019.pdb
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrade\RevitFileUpgrade2019\obj\Debug\RevitFileUpgrade2019.csproj.AssemblyReference.cache

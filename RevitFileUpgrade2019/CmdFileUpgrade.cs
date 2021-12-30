@@ -24,8 +24,8 @@ namespace RevitFileUpgrade
         public string PanelName => "Library Manage";
         public int PanelIndex => 0;
         public int MenuIndex => 2;
-        public string Name => "File Upgrade 2020";
-        public string AliasName => "File Upgrade 2020";
+        public string Name => "File Upgrade 2019";
+        public string AliasName => "File Upgrade 2019";
         public string ClassName => nameof(CmdParameterManager);
         public string ModelName => GetType().FullName;
         public BitmapImage Image => PluginLoader.GetBitmapImage("FileUpgrade.png");
@@ -173,25 +173,25 @@ namespace RevitFileUpgrade
                                 previousDocument.Close(saveModified);
                             }
 
-                            //// Initial a transaction to add parameters.
-                            //try
-                            //{
-                            //    Transaction t = new Transaction(doc, "Add Parameter");
-                            //    t.Start();
-                            //    FamilyParameter version = doc.FamilyManager.AddParameter("Version", BuiltInParameterGroup.PG_TEXT, ParameterType.Text, false);
-                            //    FamilyParameter lastPublishedDate = doc.FamilyManager.AddParameter("Last Published Date", BuiltInParameterGroup.PG_TEXT, ParameterType.Text, false);
-                            //    FamilyParameter publishedBy = doc.FamilyManager.AddParameter("Published by", BuiltInParameterGroup.PG_TEXT, ParameterType.Text, false);
+                            // Initial a transaction to add parameters.
+                            try
+                            {
+                                Transaction t = new Transaction(doc, "Add Parameter");
+                                t.Start();
+                                FamilyParameter version = doc.FamilyManager.AddParameter("Version", BuiltInParameterGroup.PG_TEXT, ParameterType.Text, false);
+                                FamilyParameter lastPublishedDate = doc.FamilyManager.AddParameter("Last Published Date", BuiltInParameterGroup.PG_TEXT, ParameterType.Text, false);
+                                FamilyParameter publishedBy = doc.FamilyManager.AddParameter("Published by", BuiltInParameterGroup.PG_TEXT, ParameterType.Text, false);
 
-                            //    doc.Regenerate();
-                            //    doc.FamilyManager.Set(version, "0");
-                            //    doc.FamilyManager.Set(lastPublishedDate, System.DateTime.Today.ToString());
-                            //    doc.FamilyManager.Set(publishedBy, "Chenzhang Wang");
-                            //    t.Commit();
-                            //}
-                            //catch
-                            //{
+                                doc.Regenerate();
+                                doc.FamilyManager.Set(version, "0");
+                                doc.FamilyManager.Set(lastPublishedDate, System.DateTime.Today.ToString());
+                                doc.FamilyManager.Set(publishedBy, "Chenzhang Wang");
+                                t.Commit();
+                            }
+                            catch
+                            {
 
-                            //}
+                            }
 
 
 
@@ -199,7 +199,7 @@ namespace RevitFileUpgrade
                             // Since we are opening a file as an active document, it takes care of preview. 
                             String destinationFile = destPath + "\\" + file.Name;
                             var versionIndex = destinationFile.Length - 13;
-                            var destionationFilePath = destinationFile.Remove(versionIndex, 4).Insert(versionIndex, "2020");
+                            var destionationFilePath = destinationFile.Remove(versionIndex, 4).Insert(versionIndex, "2019");
                             doc.SaveAs(destionationFilePath);
 
                             // Saving the current document to close it later.   
