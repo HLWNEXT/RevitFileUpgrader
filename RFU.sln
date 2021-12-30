@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitFileUpgrade2021", "Rev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitFileUpgrade2020", "RevitFileUpgrade2020\RevitFileUpgrade2020.csproj", "{57E6F3B3-E090-4654-B349-5FA3AEA6265D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitFileUpgrade2019", "RevitFileUpgrade2019\RevitFileUpgrade2019.csproj", "{C673D598-5E9A-4960-A636-9299112BE959}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{57E6F3B3-E090-4654-B349-5FA3AEA6265D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57E6F3B3-E090-4654-B349-5FA3AEA6265D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57E6F3B3-E090-4654-B349-5FA3AEA6265D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C673D598-5E9A-4960-A636-9299112BE959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C673D598-5E9A-4960-A636-9299112BE959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C673D598-5E9A-4960-A636-9299112BE959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C673D598-5E9A-4960-A636-9299112BE959}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
