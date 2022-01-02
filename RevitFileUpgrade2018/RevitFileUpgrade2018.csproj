@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{57E6F3B3-E090-4654-B349-5FA3AEA6265D}</ProjectGuid>
+    <ProjectGuid>{A523ACE3-7F65-40EE-B025-9F0DB57CCF1C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RevitFileUpgrade2020</RootNamespace>

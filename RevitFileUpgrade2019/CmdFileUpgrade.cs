@@ -108,7 +108,7 @@ namespace RevitFileUpgrade
         {
             //addInfo = false;
             // Check if file type is what is expected to be upgraded or is a text file which is for files which contain type information for certain family files
-            if ((! (file.Name.Contains("2021") || file.Name.Contains("2020"))) && (fileTypes.Contains(file.Extension) || file.Extension.Equals(".txt")))
+            if ((! (file.Name.Contains("2021") || file.Name.Contains("2020") || file.Name.Contains("2019"))) && (fileTypes.Contains(file.Extension) || file.Extension.Equals(".txt")))
             {
                 try
                 {
@@ -174,24 +174,24 @@ namespace RevitFileUpgrade
                             }
 
                             // Initial a transaction to add parameters.
-                            try
-                            {
-                                Transaction t = new Transaction(doc, "Add Parameter");
-                                t.Start();
-                                FamilyParameter version = doc.FamilyManager.AddParameter("Version", BuiltInParameterGroup.PG_TEXT, ParameterType.Text, false);
-                                FamilyParameter lastPublishedDate = doc.FamilyManager.AddParameter("Last Published Date", BuiltInParameterGroup.PG_TEXT, ParameterType.Text, false);
-                                FamilyParameter publishedBy = doc.FamilyManager.AddParameter("Published by", BuiltInParameterGroup.PG_TEXT, ParameterType.Text, false);
+                            //try
+                            //{
+                            //    Transaction t = new Transaction(doc, "Add Parameter");
+                            //    t.Start();
+                            //    FamilyParameter version = doc.FamilyManager.AddParameter("Version", BuiltInParameterGroup.PG_TEXT, ParameterType.Text, false);
+                            //    FamilyParameter lastPublishedDate = doc.FamilyManager.AddParameter("Last Published Date", BuiltInParameterGroup.PG_TEXT, ParameterType.Text, false);
+                            //    FamilyParameter publishedBy = doc.FamilyManager.AddParameter("Published by", BuiltInParameterGroup.PG_TEXT, ParameterType.Text, false);
 
-                                doc.Regenerate();
-                                doc.FamilyManager.Set(version, "0");
-                                doc.FamilyManager.Set(lastPublishedDate, System.DateTime.Today.ToString());
-                                doc.FamilyManager.Set(publishedBy, "Chenzhang Wang");
-                                t.Commit();
-                            }
-                            catch
-                            {
+                            //    doc.Regenerate();
+                            //    doc.FamilyManager.Set(version, "0");
+                            //    doc.FamilyManager.Set(lastPublishedDate, System.DateTime.Today.ToString());
+                            //    doc.FamilyManager.Set(publishedBy, "Chenzhang Wang");
+                            //    t.Commit();
+                            //}
+                            //catch
+                            //{
 
-                            }
+                            //}
 
 
 
