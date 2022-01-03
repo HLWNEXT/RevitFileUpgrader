@@ -4,7 +4,7 @@ using Autodesk.Revit.DB.Events;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Events;
 using RevitFileUpgrade.Views;
-using RevitPlugin;
+//using RevitPlugin;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -18,7 +18,7 @@ namespace RevitFileUpgrade
 {
     [Serializable()]
     [Transaction(TransactionMode.Manual)]
-    public class CmdParameterManager : IExternalCommand, IRevitPlugin
+    public class CmdParameterManager : IExternalCommand
     {
         public string GroupName => "HLW NEXT";
         public string PanelName => "Library Manage";
@@ -28,7 +28,7 @@ namespace RevitFileUpgrade
         public string AliasName => "File Upgrade 2020";
         public string ClassName => nameof(CmdParameterManager);
         public string ModelName => GetType().FullName;
-        public BitmapImage Image => PluginLoader.GetBitmapImage("FileUpgrade.png");
+        //public BitmapImage Image => PluginLoader.GetBitmapImage("FileUpgrade.png");
         
 
 
@@ -108,7 +108,7 @@ namespace RevitFileUpgrade
         {
             //addInfo = false;
             // Check if file type is what is expected to be upgraded or is a text file which is for files which contain type information for certain family files
-            if ((! (file.Name.Contains("2021") || file.Name.Contains("2020"))) && (fileTypes.Contains(file.Extension) || file.Extension.Equals(".txt")))
+            if ((! (file.Name.Contains("2021") || file.Name.Contains("2020") || file.Name.Contains("2019") || file.Name.Contains("2018"))) && (fileTypes.Contains(file.Extension) || file.Extension.Equals(".txt")))
             {
                 try
                 {
@@ -173,7 +173,7 @@ namespace RevitFileUpgrade
                                 previousDocument.Close(saveModified);
                             }
 
-                            //// Initial a transaction to add parameters.
+                            // Initial a transaction to add parameters.
                             //try
                             //{
                             //    Transaction t = new Transaction(doc, "Add Parameter");
@@ -199,7 +199,7 @@ namespace RevitFileUpgrade
                             // Since we are opening a file as an active document, it takes care of preview. 
                             String destinationFile = destPath + "\\" + file.Name;
                             var versionIndex = destinationFile.Length - 13;
-                            var destionationFilePath = destinationFile.Remove(versionIndex, 4).Insert(versionIndex, "2020");
+                            var destionationFilePath = destinationFile.Remove(versionIndex, 4).Insert(versionIndex, "2018");
                             doc.SaveAs(destionationFilePath);
 
                             // Saving the current document to close it later.   
