@@ -53,7 +53,7 @@ namespace RevitFileUpgrade.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/RevitFileUpgrade2020;component/views/fileupgrade.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/RevitFileUpgrade2017;component/views/fileupgrade.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Views\FileUpgrade.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
