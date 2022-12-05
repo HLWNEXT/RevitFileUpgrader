@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "aaa918aa-8346-494f-bc12-1596d89f56e5": {
+      "ProjectGuid": "aaa918aa-8346-494f-bc12-1596d89f56e5",
+      "DisplayName": "RevitFileUpgrade2021",
+      "ColorIndex": 0
+    },
+    "c673d598-5e9a-4960-a636-9299112be959": {
+      "ProjectGuid": "c673d598-5e9a-4960-a636-9299112be959",
+      "DisplayName": "RevitFileUpgrade2019",
+      "ColorIndex": 1
+    },
+    "302a8de1-2add-41c8-90cb-b1eb28dfab20": {
+      "ProjectGuid": "302a8de1-2add-41c8-90cb-b1eb28dfab20",
+      "DisplayName": "RevitFileUpgrade2017",
+      "ColorIndex": 2
+    },
+    "a523ace3-7f65-40ee-b025-9f0db57ccf1c": {
+      "ProjectGuid": "a523ace3-7f65-40ee-b025-9f0db57ccf1c",
+      "DisplayName": "RevitFileUpgrade2018",
+      "ColorIndex": 3
+    },
+    "57e6f3b3-e090-4654-b349-5fa3aea6265d": {
+      "ProjectGuid": "57e6f3b3-e090-4654-b349-5fa3aea6265d",
+      "DisplayName": "RevitFileUpgrade2020",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

@@ -1,0 +1,14 @@
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrader\RevitFileUpgrade2022\obj\Debug\RevitFileUpgrade2022.csproj.AssemblyReference.cache
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrader\RevitFileUpgrade2022\obj\Debug\Views\FileUpgrade.g.cs
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrader\RevitFileUpgrade2022\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrader\RevitFileUpgrade2022\obj\Debug\RevitFileUpgrade2022_MarkupCompile.cache
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrader\RevitFileUpgrade2022\obj\Debug\RevitFileUpgrade2022_MarkupCompile.lref
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrader\RevitFileUpgrade2022\bin\Debug\RevitFileUpgrade2022.dll
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrader\RevitFileUpgrade2022\bin\Debug\RevitFileUpgrade2022.pdb
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrader\RevitFileUpgrade2022\bin\Debug\RevitPlugin.dll
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrader\RevitFileUpgrade2022\obj\Debug\Views\FileUpgrade.baml
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrader\RevitFileUpgrade2022\obj\Debug\RevitFileUpgrade2022.g.resources
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrader\RevitFileUpgrade2022\obj\Debug\RevitFileUpgrade2022.csproj.CoreCompileInputs.cache
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrader\RevitFileUpgrade2022\obj\Debug\RevitFileUpgrade2022.csproj.CopyComplete
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrader\RevitFileUpgrade2022\obj\Debug\RevitFileUpgrade2022.dll
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\Git\RevitFileUpgrader\RevitFileUpgrade2022\obj\Debug\RevitFileUpgrade2022.pdb
