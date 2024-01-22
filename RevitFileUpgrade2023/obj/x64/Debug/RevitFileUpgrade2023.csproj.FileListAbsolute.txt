@@ -1,0 +1,14 @@
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\GitHub\RevitFileUpgrader\RevitFileUpgrade2023\bin\x64\Debug\RevitFileUpgrade2023.dll
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\GitHub\RevitFileUpgrader\RevitFileUpgrade2023\bin\x64\Debug\RevitFileUpgrade2023.pdb
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\GitHub\RevitFileUpgrader\RevitFileUpgrade2023\bin\x64\Debug\RevitPlugin.dll
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\GitHub\RevitFileUpgrader\RevitFileUpgrade2023\obj\x64\Debug\RevitFileUpgrade2023.csproj.AssemblyReference.cache
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\GitHub\RevitFileUpgrader\RevitFileUpgrade2023\obj\x64\Debug\Views\FileUpgrade.g.cs
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\GitHub\RevitFileUpgrader\RevitFileUpgrade2023\obj\x64\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\GitHub\RevitFileUpgrader\RevitFileUpgrade2023\obj\x64\Debug\RevitFileUpgrade2023_MarkupCompile.cache
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\GitHub\RevitFileUpgrader\RevitFileUpgrade2023\obj\x64\Debug\RevitFileUpgrade2023_MarkupCompile.lref
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\GitHub\RevitFileUpgrader\RevitFileUpgrade2023\obj\x64\Debug\Views\FileUpgrade.baml
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\GitHub\RevitFileUpgrader\RevitFileUpgrade2023\obj\x64\Debug\RevitFileUpgrade2023.g.resources
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\GitHub\RevitFileUpgrader\RevitFileUpgrade2023\obj\x64\Debug\RevitFileUpgrade2023.csproj.CoreCompileInputs.cache
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\GitHub\RevitFileUpgrader\RevitFileUpgrade2023\obj\x64\Debug\RevitFileUpgrade2023.csproj.CopyComplete
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\GitHub\RevitFileUpgrader\RevitFileUpgrade2023\obj\x64\Debug\RevitFileUpgrade2023.dll
+C:\Users\cwang\OneDrive - HLW International LLP\Documents\GitHub\RevitFileUpgrader\RevitFileUpgrade2023\obj\x64\Debug\RevitFileUpgrade2023.pdb

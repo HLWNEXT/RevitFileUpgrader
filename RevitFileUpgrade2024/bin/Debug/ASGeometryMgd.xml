@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "ASGeometryMgd"
+    </assembly>
+    <members>
+        <member name="M:Autodesk.AdvanceSteel.Geometry.Polyline3d.CreateFromVerticesAndBulges(Autodesk.AdvanceSteel.Geometry.Point3d[],System.Double[],Autodesk.AdvanceSteel.Geometry.Vector3d,System.Boolean,System.Double)">
+            <summary>
+Creates an augmented polygon.
+<para>
+The bulge is the tangent of 1/4 of the included angle for the arc between
+the vertex and the next vertex in the polyline's vertex list.
+</para><para>
+A negative bulge value indicates that the arc goes clockwise from this
+vertex to the next.
+</para><para>
+Passing bulges as null will build a polyline with straight segments only
+</para></summary>
+            <param name="vertices" />
+            <param name="bulges" />
+            <param name="normal" />
+            <param name="closed" />
+            <param name="absError" />
+            <returns />
+        </member>
+        <member name="M:Autodesk.AdvanceSteel.Geometry.Polyline3d.CreateFromVerticesAndFilletInformation(Autodesk.AdvanceSteel.Geometry.Point3d[],System.Double[],Autodesk.AdvanceSteel.Geometry.Vector3d,System.Boolean)">
+            <summary>
+Creates an augmented polygon.
+<para>
+Precondition: plg.length() == filletRadia.length()
+						 plgNormal is the normal of the plg</para><para>
+Positive radia indicates a fillet at convex vertices
+Negative radia indicates a fillet at concav vertices
+Zero-Radia indicates non filleted vertices
+</para><para>
+Postcondition: 
+An open polygone is created, where filleted corners are split up into two
+new corners. One of these new corners contains the corner feature information. 
+</para><para>
+For convex fillets plgNormal is used.
+For concav fillets -plgNormal is used.
+</para></summary>
+            <param name="vertices" />
+            <param name="filetRadii" />
+            <param name="normal" />
+            <param name="closed" />
+            <returns />
+        </member>
+        <member name="M:AstGeomPolyline3d.createFromVerticesAndFilletInformation(AstArray&lt;AstGeomPoint3d,AstArrayMemCopyReallocator&lt;AstGeomPoint3d&gt;,AstArrayMemoryController&lt;AstGeomPoint3d&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,AstArray&lt;System.Double,AstArrayMemCopyReallocator&lt;System.Double&gt;,AstArrayMemoryController&lt;System.Double&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,AstGeomVector3d!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Boolean,System.Boolean,System.Double,System.Boolean,System.Boolean)">
+Creates an augmented polygon
+Precondition: plg.length() == filletRadia.length()
+						 plgNormal is the normal of the plg
+Positive radia indicates a fillet at convex vertices
+Negative radia indicates a fillet at concav vertices
+Zero-Radia indicates non filleted vertices
+Postcondition: 
+An open polygone is created, where filleted corners are split up into two
+new corners. One of these new corners contains the corner feature information. 
+
+For convex fillets plgNormal is used.
+For concav fillets -plgNormal is used.
+</member>
+        <member name="M:Autodesk.AdvanceSteel.Geometry.Curve3d.GetNormalAtPoint(Autodesk.AdvanceSteel.Geometry.Point3d,Autodesk.AdvanceSteel.Geometry.Vector3d,Autodesk.AdvanceSteel.Geometry.Point3d)">
+            <summary>
+Gets the normal vector at a specific point, based on a reference point and a reference normal vector.
+</summary>
+            <param name="ptRef">Reference point.</param>
+            <param name="vNormalRef">Reference normal.</param>
+            <param name="pt">Point to get normal at.</param>
+            <returns>The normal in point "pt" as vector3d.</returns>
+        </member>
+    </members>
+</doc>
