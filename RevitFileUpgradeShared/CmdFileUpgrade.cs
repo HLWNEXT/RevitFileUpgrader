@@ -200,6 +200,7 @@ namespace RevitFileUpgrade
 
 
                             doc.SaveAs(destionationFilePath);
+                            //doc.SaveAs(destinationFile);
 
                             // Saving the current document to close it later.   
                             // If we had a method to close an active document, we want to close it here. However, since we opened it as an active document, we cannot do so.

@@ -21,7 +21,7 @@ namespace RevitFileUpgrade.ViewModels
 
     class ParameterManagerViewModel : BaseViewModel, IViewModel
     {
-        List<string> fileTypes = new List<string>() { ".rfa" , ".rvt"};
+        List<string> fileTypes = new List<string>() { ".rfa" , ".rvt" , ".rft", ".rte"};
         StreamWriter writer = null;
         IList<FileInfo> files = new List<FileInfo>();
 
@@ -458,10 +458,10 @@ namespace RevitFileUpgrade.ViewModels
                 CurrentProgress = 0;
 
                 // Search the directory and create thelist of files to be upgraded
-                SearchDir(dir, true);
+                //SearchDir(dir, true);
 
                 // Set Progress bar base values for progression
-                fileCount = files.Count;
+                //fileCount = files.Count;
 
                 // Traverse through source directory and upgrade files which match the type criteria
                 TraverseAll(
@@ -469,50 +469,50 @@ namespace RevitFileUpgrade.ViewModels
                   new DirectoryInfo(DestinationPath));
 
                 // In case no files were found to match the required criteria
-                if (CmdParameterManager.failed.Equals(0) && CmdParameterManager.success.Equals(0))
-                {
-                    String msg = "No relevant files found for upgrade!";
-                    TaskDialog.Show("Incomplete", msg);
-                    writer.WriteLine(msg);
-                    writer.Flush();
-                }
-                else
-                {
-                    if (CmdParameterManager.failures.Count > 0)
-                    {
-                        String msg = "-------------"
-                          + "List of files that "
-                          + "failed to be upgraded"
-                          + "--------------------";
+                //if (CmdParameterManager.failed.Equals(0) && CmdParameterManager.success.Equals(0))
+                //{
+                //    String msg = "No relevant files found for upgrade!";
+                //    TaskDialog.Show("Incomplete", msg);
+                //    writer.WriteLine(msg);
+                //    writer.Flush();
+                //}
+                //else
+                //{
+                //    //if (CmdParameterManager.failures.Count > 0)
+                //    //{
+                //    //    String msg = "-------------"
+                //    //      + "List of files that "
+                //    //      + "failed to be upgraded"
+                //    //      + "--------------------";
 
-                        // Log failed files information
-                        writer.WriteLine("\n");
-                        writer.WriteLine(msg);
-                        writer.WriteLine("\n");
-                        writer.Flush();
+                //    //    // Log failed files information
+                //    //    writer.WriteLine("\n");
+                //    //    writer.WriteLine(msg);
+                //    //    writer.WriteLine("\n");
+                //    //    writer.Flush();
 
-                        // Display the failed files information
-                        TextBoxContents.Add("\n");
-                        TextBoxContents.Add(msg);
-                        TextBoxContents.Add("\n");
-                        //lstBxUpdates.TopIndex = lstBxUpdates.Items.Count - 1;
-                        foreach (String str in CmdParameterManager.failures)
-                        {
-                            writer.WriteLine(str);
-                            TextBoxContents.Add("\n" + str);
-                            //lstBxUpdates.TopIndex = lstBxUpdates.Items.Count - 1;
-                        }
-                        CmdParameterManager.failures.Clear();
-                        writer.Flush();
-                    }
+                //    //    // Display the failed files information
+                //    //    TextBoxContents.Add("\n");
+                //    //    TextBoxContents.Add(msg);
+                //    //    TextBoxContents.Add("\n");
+                //    //    //lstBxUpdates.TopIndex = lstBxUpdates.Items.Count - 1;
+                //    //    foreach (String str in CmdParameterManager.failures)
+                //    //    {
+                //    //        writer.WriteLine(str);
+                //    //        TextBoxContents.Add("\n" + str);
+                //    //        //lstBxUpdates.TopIndex = lstBxUpdates.Items.Count - 1;
+                //    //    }
+                //    //    CmdParameterManager.failures.Clear();
+                //    //    writer.Flush();
+                //    //}
 
-                    // Display final completion dialogwith success rate
-                    TaskDialog.Show("Completed",
-                      CmdParameterManager.success + "/" + (CmdParameterManager.success + CmdParameterManager.failed)
-                      + " files have been successfully upgraded! "
-                      + "\n\nA log file has been created at :\n"
-                      + DestinationPath);
-                }
+                //    // Display final completion dialogwith success rate
+                //    TaskDialog.Show("Completed",
+                //      CmdParameterManager.success + "/" + (CmdParameterManager.success + CmdParameterManager.failed)
+                //      + " files have been successfully upgraded! "
+                //      + "\n\nA log file has been created at :\n"
+                //      + DestinationPath);
+                //}
                 // Reset the Progress bar
                 CurrentProgress = 0;
 
